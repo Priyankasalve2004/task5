@@ -1,0 +1,120 @@
+<!Doctype>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<h1 align="center">Student Registration Form</h1>
+	<form style="background-color:Violet">
+		<table border="1" align="center">
+			<tr>
+				<th>First Name</th>
+				<td>
+					<input type="text" name="name" id="name">
+				</td>
+			</tr>
+			<tr>
+				<th>Last Name</th>
+				<td>
+					<input type="text" name="last name" id="last name">
+				</td>
+			</tr>
+			<tr>
+				<th>Mobile Number</th>
+				<td>
+					<input type="text" name="uname" id="uname" required pattern="[0-9]{10}" maxlength="10">(10 Digit Allowed)
+				</td>
+			</tr>
+			<tr>
+				<th>Sex</th>
+				<td>
+					<input type="radio" name="gender" id="gender" value="male">MALE
+                	<input type="radio" name="gender" id="gender" value="female">FEMALE
+				</td>
+			</tr>
+			<tr>
+				<th>Date of Birth(DOB)</th>
+				<td>
+					<input type="date" name="dob">
+				</td>
+			</tr>
+			<tr>
+				<th>Address</th>
+				<td>
+					<textarea name="add" id="add" rows="8" cols="50"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>City</th>
+				<td>
+					<input type="text" name="city" id="city">(Max 50 Char Allowed)
+				</td>
+			</tr>
+			<tr>
+				<th>Pincode</th>
+				<td>
+					<input type="text" name="pincode" id="pincode" required pattern="[0-9]{6}" maxlength="6"><br>
+					(Max 50 Characters Allowed)
+				</td>
+			</tr>
+			<tr>
+				<th>State</th>
+				<td>
+					<input type="text" name="city" id="city"><br>
+					(Max 50 Char Allowed)
+				</td>
+			</tr>
+			<tr>
+				<th>Country</th>
+				<td>
+					<input type="text" name="country" id="country">
+				</td>
+			</tr>
+			<tr>
+				<th>Hobbies</th>
+				<td>
+					<input type="checkbox" name="chat" value="chat">Chatting<br>
+                	<input type="checkbox" name="read" value="reading">Reading<br>
+                	<input type="checkbox" name="skech" value="skeching">Skeching<br>
+                	<input type="checkbox" name="dance" value="Dancing">Dancing<br>
+                	<input type="checkbox" name="other" value="other">Other<br>
+                	<input type="text" name="other" id="other">(Max 50 Characters Allowed)
+                </td>
+			</tr>
+			<tr>
+				<th>Qualification</th>
+				<td>
+					<input type="checkbox" name="high" value="high">High Education(10th)<br>
+                	<input type="checkbox" name="higher" value="higher">Higher School(12th)<br>
+                	<input type="checkbox" name="graduation" value="graduation">Graduation(Bacholors)<br>
+                	<input type="checkbox" name="post" value="post">Post Graduation(Masters)<br>
+                	<input type="checkbox" name="phd" value="phd">Phd<br>
+				</td>
+			</tr>
+			<tr>
+				<th>Course Applied For</th>
+				<td>
+					<input type="radio" name="bca" value="bca">BCA(Bacholer Of Computer Application)<br>
+                	<input type="radio" name="bcom" value="bcom">BCOM(Bacholer Of Commerce)<br>
+                	<input type="radio" name="bsc" value="bsc">BSC(Bacholer Of Science)<br>
+                	<input type="radio" name="ba" value="ba">BA(Bacholer Of Arts)<br>
+                	<input type="radio" name="mca" value="mca">MCA(Master Of Computer Application)<br>
+                	<input type="radio" name="mcom" value="mcom">M.COM(Master Of Commerce)<br>
+                	<input type="radio" name="msc" value="msc">M.Sc(Master Of Science)<br>
+                	<input type="radio" name="ma" value="ma">MA(Master Of Arts)
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<input type="submit" value="Submit">
+				</th>
+			
+			
+				<th>
+					<input type="reset" value="Reset">
+				</th>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
